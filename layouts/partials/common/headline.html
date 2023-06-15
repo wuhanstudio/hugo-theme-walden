@@ -1,4 +1,4 @@
-{{ range first 1 (where .Site.RegularPages "Params.headline.enabled" true) }}
+{{ range last 1 (where .Site.RegularPages "Params.headline.pin" true) }}
     {{ with .Params.headline.background }}
     <div id="headline" style="background: url({{ . | relURL}}) center center no-repeat;">
     {{ else }}
