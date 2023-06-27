@@ -1,4 +1,22 @@
 .logo {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: $primary;
+}
+
+@media (min-width: $sm) {
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: $md) {
+    .logo {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: $lg) {
+    .logo {
+        font-size: 1.8rem;
+    }
 }
