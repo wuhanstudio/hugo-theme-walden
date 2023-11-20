@@ -21,3 +21,6 @@
 {{ $sass := resources.Get "sass/main.scss" }}
 {{ $style := $sass | resources.ToCSS (dict "targetPath" "css/main.css" ) }}
 <link rel="stylesheet" type="text/css" media="screen" href="{{ $style.Permalink }}">
+
+<!-- Math -->
+{{ if .Params.math }}{{ partial "common/katex.html" . }}{{ end }}
